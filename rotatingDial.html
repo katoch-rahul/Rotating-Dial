@@ -1,0 +1,57 @@
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Buttons Grid</title>
+        <style>
+            .yo {width:75%;}
+            .yo > .po {
+                width:30%;
+                height:48px;
+                font-size:24px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id='btns'class='yo'>
+            <button id='btn1' class='po'>1</button>
+            <button id='btn2' class='po'>2</button>
+            <button id='btn3' class='po'>3</button>
+            <button id='btn4' class='po'>4</button>
+            <button id='btn5' class='po'>5</button>
+            <button id='btn6' class='po'>6</button>
+            <button id='btn7' class='po'>7</button>
+            <button id='btn8' class='po'>8</button>
+            <button id='btn9' class='po'>9</button>
+            
+        </div>
+        <script>
+               
+                    
+                let b5=document.getElementById('btn5');
+        
+                b5.onclick = function() {
+                    let b1=document.getElementById('btn1');
+                    let b2=document.getElementById('btn2');
+                    let b3=document.getElementById('btn3');
+                    let b4=document.getElementById('btn4');
+                    let b6=document.getElementById('btn6');
+                    let b7=document.getElementById('btn7');
+                    let b8=document.getElementById('btn8');
+                    let b9=document.getElementById('btn9');
+                    let temp=b1.innerHTML;
+                    b1.innerHTML=b4.innerHTML;
+                    b4.innerHTML=b7.innerHTML;
+                    b7.innerHTML=b8.innerHTML;
+                    b8.innerHTML=b9.innerHTML;
+                    b9.innerHTML=b6.innerHTML;
+                    b6.innerHTML=b3.innerHTML;
+                    b3.innerHTML=b2.innerHTML; 
+                    b2.innerHTML=temp;
+                }
+
+            </script>
+    </body>
+</html>
